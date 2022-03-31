@@ -1,0 +1,32 @@
+// add option error
+
+.add-option-error {
+  color: $off-white;
+  font-style: italic;
+  margin: $m-size 0 0 0;
+  padding: 0 $m-size;
+}
+
+// add option {
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size;
+  gap: 0.7rem;
+}
+
+.add-option__input {
+  background: $dark-blue;
+  border: none;
+  border-bottom: 0.3rem solid darken($dark-blue, 10%);
+  flex-grow: 1;
+  color: $off-white;
+  padding: $s-size;
+  outline: none;
+}
+
+@media only screen and (min-width: 30rem) {
+  .add-option {
+    flex-direction: row;
+  }
+}
